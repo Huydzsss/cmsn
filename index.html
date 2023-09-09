@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" href="https://scontent-xsp1-1.xx.fbcdn.net/v/t39.30808-6/350113458_2640394902780252_6415066312197130603_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=a2f6c7&_nc_ohc=wi6t8M3MWn8AX9K6f55&_nc_ht=scontent-xsp1-1.xx&oh=00_AfDd5s2zynaUyL1urY4i0ZQ0cwoofChSfTkgGcVPHn5cew&oe=650177C9" type="image/png">
+    <title>Chúc mừng sinh nhật!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        h1 {
+            color: #ff4500;
+            font-size: 36px;
+        }
+        p {
+            color: #333;
+            font-size: 24px;
+        }
+        #birthday-image {
+            border-radius: 50%;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <h1>Chúc mừng sinh nhật!</h1>
+    <p>Chúc mừng sinh nhật hai chị! Chúc chị có một ngày vui vẻ và hạnh phúc.</p>
+    <img id="birthday-image" src="https://haycafe.vn/wp-content/uploads/2022/11/anh-nen-sinh-nhat-de-thuong.jpg"  width="300" height="300">
+    <script>
+        // Hiệu ứng động cho hình ảnh sinh nhật
+        const birthdayImage = document.getElementById("birthday-image");
+        let rotateAngle = 0;
+        setInterval(() => {
+            rotateAngle += 1;
+            birthdayImage.style.transform = `rotate(${rotateAngle}deg)`;
+        }, 20);
+    </script>
+</body>
+</html>
